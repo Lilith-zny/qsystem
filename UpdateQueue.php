@@ -6,15 +6,15 @@ if (isset($_POST['submit'])) {
 
 
 
-    $FoodId = $_POST['QDate'];
-    $FoodName = $_POST['QNumber'];
-    $FoodPrice =  $_POST['Pid'];
-    $FoodImage =  $_POST['Qstatus'];
+    $QDate = $_POST['QDate'];
+    $QNumber = $_POST['QNumber'];
+    $Pid =  $_POST['Pid'];
+    $Qstatus =  $_POST['Qstatus'];
 
-    echo 'FoodId = ' . $FoodId;
-    echo 'FoodName = ' . $FoodName;
-    echo 'FoodPrice = ' . $FoodPrice;
-    echo 'FoodImage = ' . $FoodImage;
+    echo 'QDate = ' . $QDate;
+    echo 'QNumber = ' . $QNumber;
+    echo 'Pid = ' . $Pid;
+    echo 'Qstatus = ' . $Qstatus;
 
 
     $sql = "UPDATE queue SET QDate = :QDate, QNumber = :QNumber, Pid = :Pid, Qstatus = :Qstatus WHERE Pid = :Pid";

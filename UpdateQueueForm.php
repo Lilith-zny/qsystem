@@ -54,7 +54,7 @@
                     <input type="text" name="Pid" class="form-control" required value="<?= $result['Pid']; ?>">
 
                     <label for="name" class="col-sm-2 col-form-label"> สถานะ : </label>
-                    <select name="QStatus" id="QStatus" class="form-control">
+                    <select name="Qstatus" id="Qstatus" class="form-control">
                         <option value="รอเข้ารับการรักษา">รอเข้ารับการรักษา</option>
                         <option value="รักษาเสร็จแล้ว">รักษาเสร็จแล้ว</option>
                     </select>
