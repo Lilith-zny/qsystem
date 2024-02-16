@@ -56,7 +56,7 @@
                                 <td>
                                     <?= $r['genderDescription'] ?>
                                 </td>
-                                <td><img src="./image<?= $r['Image'] ?>" width="50px" height="50" alt="image" onclick="enlargeImg()" id="img1"></td>
+                                <td><img src="./image/<?= $r['Image'] ?>" width="50px" height="50" alt="image" onclick="enlargeImg()" id="img1"></td>
                                 <td>
                                     <?= $r['Qstatus'] ?>
                                 </td>
