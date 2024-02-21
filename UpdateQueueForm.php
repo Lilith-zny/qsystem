@@ -30,10 +30,9 @@
         $sql_select_customer = 'SELECT * FROM queue WHERE Pid=?';
         $stmt = $conn->prepare($sql_select_customer);
         $stmt->execute([$_GET['Pid']]);
-        // echo "get = ".$_GET['FoodId'];
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
     }
-
+        
     ?>
 
 
@@ -44,7 +43,7 @@
                 <form action="UpdateQueue.php" method="POST">
 
                     <label for="name" class="col-sm-5 col-form-label"> วันที่จองเข้ารับการรักษา : </label>
-                    <input type="text" name="QDate" class="form-control" required value="<?= $result['QDate']; ?>">
+                    <input type="text" name="QDate" class="form-control" readonly required value="<?= $result['QDate']; ?>">
 
 
                     <label for="name" class="col-sm-2 col-form-label"> รหัสคิว : </label>
