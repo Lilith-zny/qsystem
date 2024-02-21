@@ -14,12 +14,27 @@ $stml->bindParam(':Pid', $_GET["Pid"]);
 if($stml->execute()) :
     
         $message = "Successfully delete customer".$_GET['Pid'].".";
+        echo '
+                        <script type="text/javascript">        
+                        $(document).ready(function(){
+                    
+                            swal({
+                                title: "Success!",
+                                text: "Successfuly add customer",
+                                type: "success",
+                                timer: 2500,
+                                showConfirmButton: false
+                            }, function(){
+                                    window.location.href = "index.php";
+                            });
+                        });                    
+                        </script>';
 
 else :
     $message = "Fail to delete customer information.";
 endif;
 $conn = null;
 
-header("Location:index.php");
+// header("Location:index.php");
 
 ?>
