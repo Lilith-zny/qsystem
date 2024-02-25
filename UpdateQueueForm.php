@@ -47,10 +47,10 @@
 
 
                     <label for="name" class="col-sm-2 col-form-label"> รหัสคิว : </label>
-                    <input type="text" name="QNumber" class="form-control" required value="<?= $result['QNumber']; ?>">
+                    <input type="text" name="QNumber" class="form-control" readonly required value="<?= $result['QNumber']; ?>">
 
                     <label for="name" class="col-sm-2 col-form-label"> รหัสบัตรประชาชน : </label>
-                    <input type="text" name="Pid" class="form-control" required value="<?= $result['Pid']; ?>">
+                    <input type="text" name="Pid" class="form-control" readonly required value="<?= $result['Pid']; ?>">
 
                     <label for="name" class="col-sm-2 col-form-label"> สถานะ : </label>
                     <select name="Qstatus" id="Qstatus" class="form-control">
